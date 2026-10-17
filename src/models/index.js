@@ -1,0 +1,5 @@
+const {DataTypes}=require('sequelize');const sequelize=require('../config/database');
+const Subject=sequelize.define('Subject',{id:{type:DataTypes.INTEGER.UNSIGNED,autoIncrement:true,primaryKey:true},name:{type:DataTypes.STRING(120),allowNull:false,unique:true}},{tableName:'subjects',underscored:true,paranoid:true});
+const Activity=sequelize.define('Activity',{id:{type:DataTypes.INTEGER.UNSIGNED,autoIncrement:true,primaryKey:true},subject_id:{type:DataTypes.INTEGER.UNSIGNED,allowNull:false},title:{type:DataTypes.STRING(150),allowNull:false},type:{type:DataTypes.ENUM('homework','activity','quick_test','midterm','final','project','other'),allowNull:false},grade:{type:DataTypes.DECIMAL(5,2),allowNull:false,validate:{min:0,max:100}},date:{type:DataTypes.DATEONLY,allowNull:false},notes:{type:DataTypes.TEXT,allowNull:true}},{tableName:'activities',underscored:true,paranoid:true});
+Subject.hasMany(Activity,{as:'activities',foreignKey:'subject_id'});Activity.belongsTo(Subject,{as:'subject',foreignKey:'subject_id'});
+module.exports={sequelize,Subject,Activity};
