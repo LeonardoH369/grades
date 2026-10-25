@@ -1,0 +1,82 @@
+{
+  "port": 3003,
+  "figures": [
+    {
+      "file": "01-materias.png",
+      "title": "Listado de materias",
+      "description": "Cada materia presenta sus actividades registradas y un promedio simple de las calificaciones. Todas las notas son ficticias."
+    },
+    {
+      "file": "02-nueva-materia.png",
+      "title": "Creación de una materia",
+      "description": "Formulario para agregar una materia al sistema personal."
+    },
+    {
+      "file": "03-materia-sin-actividades.png",
+      "title": "Materia sin actividades",
+      "description": "Al seleccionar una materia nueva se muestra su lista vacía y la opción para registrar una evaluación."
+    },
+    {
+      "file": "04-editar-materia.png",
+      "title": "Edición de una materia",
+      "description": "El sistema permite modificar el nombre de la materia."
+    },
+    {
+      "file": "05-nueva-actividad.png",
+      "title": "Registro de una actividad evaluable",
+      "description": "La actividad incluye título, tipo, calificación, fecha y observaciones opcionales."
+    },
+    {
+      "file": "06-actividades.png",
+      "title": "Actividades y calificaciones de una materia",
+      "description": "La materia seleccionada muestra la evaluación guardada y sus datos completos en el listado."
+    },
+    {
+      "file": "07-editar-actividad.png",
+      "title": "Modificación de una actividad y su calificación",
+      "description": "La calificación se cambia de 92.50 a 97.75 y se actualizan las observaciones."
+    },
+    {
+      "file": "08-nota-actualizada.png",
+      "title": "Calificación actualizada y persistida",
+      "description": "El listado de la materia refleja la nueva calificación y las observaciones guardadas."
+    },
+    {
+      "file": "09-eliminar-actividad.png",
+      "title": "Confirmación de eliminación de una actividad",
+      "description": "Antes de retirar la evaluación, la vista identifica su título y la nota registrada."
+    },
+    {
+      "file": "10-actividad-eliminada.png",
+      "title": "Actividad retirada de la materia",
+      "description": "La evaluación ya no aparece en el listado de actividades activas tras confirmar su baja."
+    },
+    {
+      "file": "11-eliminar-materia.png",
+      "title": "Confirmación de eliminación de una materia",
+      "description": "La vista informa que la baja de la materia también retira sus actividades y conserva el historial mediante borrado lógico."
+    },
+    {
+      "file": "12-materia-eliminada.png",
+      "title": "Materia retirada del listado",
+      "description": "El sistema vuelve a las materias activas y confirma la eliminación."
+    },
+    {
+      "file": "13-validacion.png",
+      "title": "Rechazo de una calificación fuera de escala",
+      "description": "El servidor rechaza 101 aun cuando se omite la validación del navegador durante esta prueba."
+    },
+    {
+      "file": "14-modelos-relaciones.png",
+      "title": "Modelos y relaciones de grades",
+      "description": "Captura del visor técnico con archivos o salidas reales del proyecto."
+    },
+    {
+      "file": "15-pruebas.png",
+      "title": "Seis pruebas aprobadas de grades",
+      "description": "Captura del visor técnico con archivos o salidas reales del proyecto."
+    }
+  ],
+  "repository": "https://github.com/LeonardoH369/grades",
+  "pageErrors": []
+}
